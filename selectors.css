@@ -1,0 +1,37 @@
+header {
+	border: 1px solid pink;
+}
+
+header li {
+	display: inline-block;
+	list-style-image: none;
+	padding: 0 1em;
+}
+
+.disabled {
+	color: grey;
+}
+
+a.disabled {
+	color: purple;
+}
+
+.active {
+	color: yellow;
+}
+
+/* styling without adding a class */
+div.parent div div:nth-child(1),
+/* styling with an added class */
+.red-text
+{
+	color: red;
+}
+
+/* styling without adding a class */
+div.parent div div:nth-child(3),
+/* styling with an added class */
+.blue-text
+{
+	color: blue;
+}
