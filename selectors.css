@@ -21,17 +21,33 @@ a.disabled {
 }
 
 /* styling without adding a class */
-div.parent div div:nth-child(1),
-/* styling with an added class */
-.red-text
-{
+div.parent div div:nth-child(1) {
 	color: red;
 }
 
 /* styling without adding a class */
-div.parent div div:nth-child(3),
-/* styling with an added class */
-.blue-text
-{
+div.parent div div:nth-child(3) {
 	color: blue;
+}
+
+div.parent div div:first-of-type + h4 {
+	background-color: red;
+}
+
+div.parent div div:nth-of-type(2) + h4 {
+	background-color: blue;
+}
+
+div.grandparent > h4 {
+	border: 1px solid black;
+	border-radius: 5px;
+}
+
+.promo {
+	font-weight: bold;
+	color: gold;
+}
+
+input[type="text"] {
+	height: 25px;
 }
